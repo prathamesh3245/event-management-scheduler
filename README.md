@@ -65,21 +65,26 @@ Open a new terminal tab/window.
 Navigate to the client directory:
 
 Bash
+
 cd client
 Install dependencies:
 
 Bash
+
 npm install
 Start the client development server:
 
 Bash
+
 npm run dev
 The calendar application will open in your browser, typically at http://localhost:5173 (Vite default).
 
 API Endpoints (Backend)
+
 The server exposes a single REST resource, /api/events, for all CRUD operations.
 
 iii. API Endpoints
+
 Method, Endpoint, Description, Expected Data (Body)
 GET, /api/events,Retrieves all events from the database., None
 POST, /api/events, Creates a new event., "{ title, start, end, description, allDay }"
