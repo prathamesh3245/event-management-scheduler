@@ -1,4 +1,4 @@
-Event Management Scheduler
+## Event Management Scheduler
 A full-stack calendar application built to manage, create, edit, and delete scheduling events via a modern React frontend and a fast Node.js backend.
 
 Features Overview
@@ -20,7 +20,7 @@ Component	Technology	Description
 Frontend (client)	React (Vite)	Modern JavaScript library for building the user interface.
 Calendar	FullCalendar	Interactive, customizable calendar library.
 State/API	Axios	Promise-based HTTP client for API calls.
-Backend (server)	Node.js / Express	Fast, unopinionated web framework for the REST API.
+Backend (server)	Express	Fast, unopinionated web framework for the REST API.
 Database	MongoDB	NoSQL database for storing event data.
 ODM	Mongoose	MongoDB object data modeling for Node.js.
 
@@ -83,13 +83,15 @@ API Endpoints (Backend)
 
 The server exposes a single REST resource, /api/events, for all CRUD operations.
 
-iii. API Endpoints
+## 🔗 API Endpoints (Backend)
 
-Method, Endpoint, Description, Expected Data (Body)
-GET, /api/events,Retrieves all events from the database., None
-POST, /api/events, Creates a new event., "{ title, start, end, description, allDay }"
-PUT,/api/events/:id,Updates an existing event.,"{ title, start, end, description, allDay }"
-DELETE,/api/events/:id,Deletes a specific event by ID.,None
-POST	/api/events	Creates a new event.	{ title, start, end, description, allDay }
-PUT	/api/events/:id	Updates an existing event.	{ title, start, end, description, allDay }
+The server exposes a single REST resource, `/api/events`, for all CRUD operations.
+
+| Method | Endpoint | Description | Expected Data (Body) |
+| :--- | :--- | :--- | :--- |
+| **GET** | `/api/events` | Retrieves all events from the database. | None |
+| **POST** | `/api/events` | Creates a new event. | `{ title, start, end, description, allDay }` |
+| **PUT** | `/api/events/:id` | Updates an existing event, identified by its Mongo `_id`. | `{ title, start, end, description, allDay }` |
+| **DELETE** | `/api/events/:id` | Deletes a specific event by ID. | None |
+ }
 DELETE	/api/events/:id	Deletes a specific event by ID.	None
