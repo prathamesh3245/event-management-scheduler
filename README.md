@@ -1,7 +1,3 @@
-That's a great final step! A well-written README.md is essential for any repository, as it serves as the project's documentation and guide.
-
-Here is the comprehensive content for your README.md file, covering all the features, tech stack, and setup instructions for your Event Management Scheduler.
-
 Event Management Scheduler
 A full-stack calendar application built to manage, create, edit, and delete scheduling events via a modern React frontend and a fast Node.js backend.
 
@@ -47,27 +43,21 @@ Step 2: Configure the Backend
 Navigate to the server directory:
 
 Bash
-
 cd server
 Install dependencies:
 
 Bash
-
 npm install
 Database Setup: Create a .env file in the server directory and add your MongoDB connection string:
 
-# server/.env
+server/.env
 MONGO_URI="mongodb://localhost:27017/calendar_app"
-# OR (for Atlas)
-# MONGO_URI="mongodb+srv://user:password@cluster/dbname"
+
 Start the backend server:
 
 Bash
-
 npx nodemon index.js 
-# OR
-# npm start (if configured)
-The server will run on http://localhost:5000.
+
 
 Step 3: Run the Frontend
 Open a new terminal tab/window.
@@ -75,17 +65,14 @@ Open a new terminal tab/window.
 Navigate to the client directory:
 
 Bash
-
 cd client
 Install dependencies:
 
 Bash
-
 npm install
 Start the client development server:
 
 Bash
-
 npm run dev
 The calendar application will open in your browser, typically at http://localhost:5173 (Vite default).
 
@@ -93,9 +80,9 @@ API Endpoints (Backend)
 The server exposes a single REST resource, /api/events, for all CRUD operations.
 
 iii. API Endpoints
-Method,Endpoint,Description,Expected Data (Body)
-GET,/api/events,Retrieves all events from the database.,None
-POST,/api/events,Creates a new event.,"{ title, start, end, description, allDay }"
+Method, Endpoint, Description, Expected Data (Body)
+GET, /api/events,Retrieves all events from the database., None
+POST, /api/events, Creates a new event., "{ title, start, end, description, allDay }"
 PUT,/api/events/:id,Updates an existing event.,"{ title, start, end, description, allDay }"
 DELETE,/api/events/:id,Deletes a specific event by ID.,None
 POST	/api/events	Creates a new event.	{ title, start, end, description, allDay }
