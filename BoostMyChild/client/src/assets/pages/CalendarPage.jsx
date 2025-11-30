@@ -2,9 +2,9 @@ import React , { useState, useEffect } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import EventForm from '/Users/PRATHMESH/BoostMyChild/client/src/components/EventForm';
-import { getEvents } from '/Users/PRATHMESH/BoostMyChild/client/src/api/eventApi';
-import Footer from '/Users/PRATHMESH/BoostMyChild/client/src/components/Footer';
+import EventForm from '../../components/EventForm';
+import { getEvents } from '../../api/eventApi';
+import Footer from '../../components/Footer';
 
 
 const CalendarPage = () => {

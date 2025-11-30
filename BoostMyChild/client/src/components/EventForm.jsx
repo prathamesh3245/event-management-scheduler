@@ -1,5 +1,5 @@
 import React , { useState, useEffect } from "react";
-import { createEvent, updateEvent, deleteEvent } from "/Users/PRATHMESH/BoostMyChild/client/src/api/eventApi";
+import { createEvent, updateEvent, deleteEvent } from "../api/eventApi";
 
 
 const getFormattedDate = (dateString) => {
