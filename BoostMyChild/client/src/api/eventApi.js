@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'event-management-scheduler-production.up.railway.app';
+const API_URL = 'https://event-management-scheduler-production.up.railway.app/';
 
 export const getEvents = async () => {
     try{
