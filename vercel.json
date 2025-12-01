@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/node@2.5.2"
+    }
+  ],
+  "installCommand": "npm install --prefix client",
+  "buildCommand": "npm run build --prefix client",
+  "outputDirectory": "client/dist"
+}
