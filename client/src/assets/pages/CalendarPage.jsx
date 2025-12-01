@@ -5,7 +5,9 @@ import interactionPlugin from '@fullcalendar/interaction';
 import EventForm from '../../components/EventForm';
 import { getEvents } from '../../api/eventApi';
 import Footer from '../../components/Footer';
+ 
 
+//
 
 const CalendarPage = () => {
 
